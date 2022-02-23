@@ -32,4 +32,27 @@ def fibonacci():
             return n
         else:
             return (fib(n-1) + fib(n-2))
-    print(fib(n))        
+    print(fib(n))  
+
+def f():
+    x=int(input("num1:"))
+    y=int(input("num2:"))
+
+    def pgcd(x, y):
+        while(y):
+            x, y = y, x % y
+        return x
+
+    def ppcm(x, y):
+        ppcm = (x*y)//pgcd(x,y)
+        return ppcm
+
+    print("le pgcd",pgcd(x,y),"le ppcm", ppcm(x,y)) 
+
+
+def liste(a,b):
+    # result[]
+    for a1 in a:
+        for b1 in b:
+            if a1 == b1:
+                print(a1)

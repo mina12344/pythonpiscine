@@ -1,3 +1,2 @@
 from fonction import *
-
-fibonacci()
+liste((2,4,5), (2,5))
