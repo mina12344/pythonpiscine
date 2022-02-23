@@ -56,3 +56,10 @@ def liste(a,b):
         for b1 in b:
             if a1 == b1:
                 print(a1)
+
+def pal(mot):
+    reverse = mot[::-1]  
+  
+    if (mot == reverse): 
+        return True
+    return False        
